@@ -1,0 +1,20 @@
+# 依存関係
+node_modules/
+
+# ビルド成果物
+dist/
+*.zip
+
+# OS
+.DS_Store
+**/.DS_Store
+
+# エディタ
+.vscode/
+.idea/
+
+# 内部用（公開しない）
+CLAUDE.md
+MEMORY.md
+marketing/
+.claude/

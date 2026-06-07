@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – AI Chat Finder</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 760px; margin: 48px auto; padding: 0 24px; color: #1f2937; line-height: 1.75; }
+    h1 { font-size: 1.75rem; color: #4f46e5; margin-bottom: 4px; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; color: #374151; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
+    h3 { font-size: 0.95rem; color: #6b7280; margin-top: 1.2rem; margin-bottom: 0.4rem; }
+    p, li { color: #4b5563; }
+    ul { padding-left: 1.5rem; }
+    .updated { font-size: 0.875rem; color: #9ca3af; margin-bottom: 2rem; }
+    .callout { background: #eef2ff; border-left: 4px solid #6366f1; padding: 14px 18px; border-radius: 4px; margin: 1.5rem 0; }
+    .callout strong { color: #4338ca; }
+    .lang-ja { background: #f9fafb; border-radius: 8px; padding: 20px 24px; margin-top: 2.5rem; }
+    .lang-ja h2 { color: #374151; }
+    code { background: #f3f4f6; padding: 2px 6px; border-radius: 3px; font-size: 0.875em; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+    th { background: #f3f4f6; text-align: left; padding: 8px 12px; border: 1px solid #e5e7eb; }
+    td { padding: 8px 12px; border: 1px solid #e5e7eb; vertical-align: top; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════ ENGLISH ═══════════════════════════════════════ -->
+
+<h1>Privacy Policy</h1>
+<p class="updated">AI Chat Finder &nbsp;·&nbsp; Last updated: May 3, 2026</p>
+
+<div class="callout">
+  <strong>The short version:</strong> AI Chat Finder stores all data <em>exclusively inside your browser</em>. Nothing is ever sent to any external server, cloud service, or third party. The extension has zero network requests of its own.
+</div>
+
+<h2>1. What data is collected</h2>
+<p>When you visit a supported AI chat service, AI Chat Finder reads the page content and saves a local copy. The following data is stored <strong>only in your browser's IndexedDB</strong>:</p>
+<table>
+  <tr><th>Data collected</th><th>Purpose</th></tr>
+  <tr><td>AI chat text (user messages and AI responses)</td><td>Enables keyword search across past conversations</td></tr>
+  <tr><td>Conversation URL</td><td>Allows jumping back to the original conversation</td></tr>
+  <tr><td>Conversation title</td><td>Displayed in search results</td></tr>
+  <tr><td>Timestamps (first / last message)</td><td>Sorting and automatic expiry</td></tr>
+</table>
+
+<h2>2. What is NOT collected</h2>
+<ul>
+  <li>Account information, email addresses, or passwords</li>
+  <li>Cookies or authentication tokens</li>
+  <li>Browser history outside of Claude.ai, ChatGPT, Gemini, Copilot, Perplexity, Grok, and DeepSeek</li>
+  <li>Device information, IP address, or location</li>
+  <li>Any analytics or usage metrics</li>
+</ul>
+
+<h2>3. Where data is stored</h2>
+<p>All data is saved in <strong>IndexedDB</strong>, a browser-native storage mechanism that lives entirely on your local device. It is not encrypted at rest (the same as your browser's own cookies and cache), but it is never transmitted anywhere.</p>
+<p>Data older than <strong>14 days</strong> is automatically purged by the background service worker.</p>
+
+<h2>4. External communication</h2>
+<p>AI Chat Finder makes <strong>zero outbound network requests</strong>. There are no calls to analytics services, no telemetry, no update checks, and no cloud sync. The extension's source code can be verified on GitHub (see Section 8).</p>
+
+<h2>5. Permissions</h2>
+<p>The extension requests the following Chrome permissions:</p>
+<table>
+  <tr><th>Permission</th><th>Why it is needed</th></tr>
+  <tr><td><code>storage</code></td><td>Allows the background service worker to access IndexedDB for saving and retrieving conversations.</td></tr>
+  <tr><td><code>alarms</code></td><td>Schedules a daily cleanup task to delete conversations older than 14 days.</td></tr>
+</table>
+<p>Content scripts are injected <em>only</em> on these domains: <code>claude.ai</code>, <code>chatgpt.com</code>, <code>chat.openai.com</code>, <code>gemini.google.com</code>, <code>copilot.microsoft.com</code>, <code>www.perplexity.ai</code>, <code>grok.com</code>, <code>chat.deepseek.com</code>.</p>
+
+<h2>6. Data retention and deletion</h2>
+<ul>
+  <li><strong>Automatic:</strong> Conversations are deleted after 14 days.</li>
+  <li><strong>Manual:</strong> Uninstalling the extension removes all stored data immediately.</li>
+  <li><strong>Manual (keep installed):</strong> Go to <code>chrome://extensions</code> → AI Chat Finder → "Clear data" to wipe storage without uninstalling.</li>
+</ul>
+
+<h2>7. Children's privacy</h2>
+<p>This extension is not directed at children under 13 and does not knowingly collect any personal information from children.</p>
+
+<h2>8. Open source</h2>
+<p>The complete source code of AI Chat Finder is publicly available on GitHub. Anyone can inspect it to verify the privacy claims in this document.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>If material changes are made, the "Last updated" date at the top will be revised. Continued use of the extension constitutes acceptance of the revised policy.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy? Please open an issue on our GitHub repository or email <a href="mailto:rocostudio.dev@gmail.com">rocostudio.dev@gmail.com</a>.</p>
+
+<!-- ═══════════════════════════════════════ JAPANESE ═══════════════════════════════════════ -->
+
+<div class="lang-ja">
+<h1 style="color:#4f46e5;font-size:1.5rem;">プライバシーポリシー（日本語）</h1>
+<p class="updated">AI Chat Finder &nbsp;·&nbsp; 最終更新: 2026年5月3日</p>
+
+<div class="callout">
+  <strong>要約：</strong> AI Chat Finder はすべてのデータを<em>お使いのブラウザ内にのみ</em>保存します。外部サーバー・クラウドサービス・第三者への送信は一切行いません。拡張機能自体のネットワークリクエストはゼロです。
+</div>
+
+<h2>1. 収集するデータ</h2>
+<p>対応AIチャットサービスにアクセスすると、AI Chat Finder はページ内容を読み取り、ローカルにコピーを保存します。保存先は<strong>ブラウザのIndexedDB（ローカルのみ）</strong>です。</p>
+<table>
+  <tr><th>収集するデータ</th><th>目的</th></tr>
+  <tr><td>AIチャットのテキスト（ユーザー発言・AI回答）</td><td>過去の会話をキーワード検索するため</td></tr>
+  <tr><td>会話のURL</td><td>元の会話へジャンプするため</td></tr>
+  <tr><td>会話タイトル</td><td>検索結果に表示するため</td></tr>
+  <tr><td>タイムスタンプ（最初/最後のメッセージ）</td><td>並び替えと自動削除のため</td></tr>
+</table>
+
+<h2>2. 収集しないデータ</h2>
+<ul>
+  <li>アカウント情報・メールアドレス・パスワード</li>
+  <li>CookieやAuthenticationトークン</li>
+  <li>対応サービス以外のブラウザ閲覧履歴</li>
+  <li>端末情報・IPアドレス・位置情報</li>
+  <li>アクセス解析・利用統計データ</li>
+</ul>
+
+<h2>3. データの保存場所</h2>
+<p>すべてのデータは <strong>IndexedDB</strong>（ブラウザ標準のストレージ）に保存されます。保存先はお使いのデバイス上のみです。データは暗号化されずに保存されますが（ブラウザのCookieやキャッシュと同様）、外部に送信されることは一切ありません。</p>
+<p>保存データは <strong>14日後</strong> にバックグラウンドのサービスワーカーによって自動削除されます。</p>
+
+<h2>4. 外部通信について</h2>
+<p>AI Chat Finder は<strong>外部へのネットワークリクエストをゼロ</strong>にしています。アクセス解析・テレメトリ・アップデート確認・クラウド同期はすべて行いません。ソースコードはGitHubで公開されており、誰でも確認できます（第8項参照）。</p>
+
+<h2>5. 必要な権限</h2>
+<table>
+  <tr><th>権限</th><th>必要な理由</th></tr>
+  <tr><td><code>storage</code></td><td>バックグラウンドのサービスワーカーがIndexedDBに会話を保存・取得するため</td></tr>
+  <tr><td><code>alarms</code></td><td>14日以上経過した会話を毎日自動削除するスケジュール処理のため</td></tr>
+</table>
+<p>コンテンツスクリプトは以下のドメインにのみ注入されます：<code>claude.ai</code>、<code>chatgpt.com</code>、<code>chat.openai.com</code>、<code>gemini.google.com</code>、<code>copilot.microsoft.com</code>、<code>www.perplexity.ai</code>、<code>grok.com</code>、<code>chat.deepseek.com</code></p>
+
+<h2>6. データの保持と削除</h2>
+<ul>
+  <li><strong>自動削除：</strong> 14日が経過すると自動的に削除されます。</li>
+  <li><strong>手動削除（アンインストール）：</strong> 拡張機能をアンインストールすると保存データはすべて即座に削除されます。</li>
+  <li><strong>手動削除（インストール維持）：</strong> <code>chrome://extensions</code> → AI Chat Finder → 「データを消去」でストレージを初期化できます。</li>
+</ul>
+
+<h2>7. お子様のプライバシー</h2>
+<p>本拡張機能は13歳未満のお子様を対象としておらず、お子様の個人情報を意図的に収集することはありません。</p>
+
+<h2>8. オープンソース</h2>
+<p>AI Chat Finder の完全なソースコードはGitHubで公開されています。このプライバシーポリシーの記載内容を、誰でもコードを通じて検証することができます。</p>
+
+<h2>9. ポリシーの変更</h2>
+<p>重要な変更がある場合は、ページ上部の「最終更新」日付を更新します。変更後も本拡張機能を使用し続けることで、改定後のポリシーに同意したものとみなします。</p>
+
+<h2>10. お問い合わせ</h2>
+<p>本ポリシーに関するご質問はGitHubのIssueまたは <a href="mailto:rocostudio.dev@gmail.com">rocostudio.dev@gmail.com</a> までご連絡ください。</p>
+</div>
+
+</body>
+</html>
